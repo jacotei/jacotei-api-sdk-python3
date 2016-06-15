@@ -53,12 +53,8 @@ class ApiClient:
                     sentQueryParams[param] = value
             url = url + '?' + urllib.parse.urlencode(sentQueryParams)
 
-        if method in ['GET']:
 
-            #Options to add statements later on and for compatibility
-            pass
-
-        elif method in ['PATCH', 'POST', 'PUT', 'DELETE']:
+        if method in ['PATCH', 'POST', 'PUT', 'DELETE']:
 
             if postData:
                 headers['Content-type'] = 'application/json'
