@@ -30,6 +30,7 @@ for i in range(0,  1000):
     offer.title = 'Produto '+str(i)
     offer.link = 'http://aasdfaf.com/asdflasdf'
     offer.images = ['http://aasdfaf.com/asdflasdf.jpg']
+    offer.categories = ['Categoria','Subcategoria','Sub subcategoria']
     price = OfferPrice.OfferPrice()
     price.price = 1.99
     price.installment = 1

@@ -8,6 +8,7 @@ class Offer:
             'available': 'bool',
             'barcode': 'str',
             'images': 'list[str]',
+            'categories': 'list[str]',
             'isbn': 'str',
             'link': 'str',
             'prices': 'list[OfferPrice]',
@@ -20,6 +21,7 @@ class Offer:
             'available': 'available',
             'barcode': 'barcode',
             'images': 'images',
+            'categories': 'categories',
             'isbn': 'isbn',
             'link': 'link',
             'prices': 'prices',
@@ -40,6 +42,10 @@ class Offer:
         #Imagens dos produtos da oferta
         
         self.images = None # list[str]
+
+        #Categorias dos produtos da oferta
+        
+        self.categories = None # list[str]
         
         #cÃ³digo de barras do livro
         
